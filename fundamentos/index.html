@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino</title>
+    <!--<script src="index.js"></script>-->
+    
+</head>
+<body>
+    <h1>Formulario de dados</h1>
+    
+    <p>Nome: <input id="nome" placeholder="Nome"></p>
+    <p>Idade: <input id="idade" placeholder="Idade"></p>
+    
+    <button type="button" onclick="funcao()">Submit</button>
+    
+    <p id="pnm"></p>
+    <p id="pid"></p>
+    
+    <script>
+        function funcao(){
+            var idd, nome, text
+            
+            nome = document.getElementById("nome").value
+            idd = document.getElementById("idade").value
+
+            if(isNaN(idd) || idd < 18){
+                text = 'menor de idade'
+            }
+            else{
+                text = 'maior de idade'
+            }
+            document.getElementById("pid").innerHTML = text;
+            document.getElementById("pnm").innerHTML = nome
+        }
+    </script>
+</body>
+</html>
