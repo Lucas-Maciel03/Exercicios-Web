@@ -9,11 +9,11 @@ comparaComThis = comparaComThis.bind(obj)
 comparaComThis(global) //false
 comparaComThis(obj) //true
 
-//se eu fizer uma funcao normal apnta para o global! se eu fizer uma função arrow não aponta para o global
-
+//se eu fizer uma funcao normal aponta para o global! se eu fizer uma função arrow não aponta para o global
+console.log('-----')
 let comparaComThisArrow = (param) => console.log(this === param)
 comparaComThisArrow(global)
-comparaComThisArrow(module.exports) //vc pode acessar O module. exports atraves do this
+comparaComThisArrow(module.exports) //vc pode acessar O module.exports atraves do this
 /*O this dentro de uma função padrao em javaScript varia de acordo com a chamada
 * O this aponta para o objeto global tanto no browser quanto no node, entao tem q ter cuidado
 * Já o arrow é uma função que tem mais logica

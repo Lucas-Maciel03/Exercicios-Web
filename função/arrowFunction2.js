@@ -1,4 +1,4 @@
-//this fixo, é um this que é baseado no contexto no qual a função foi escrita, e o fato de que a função ta send chamada de locais diferentes nao influencia o valor do this
+//this fixo, é um this que é baseado no contexto no qual a função foi escrita, e o fato de que a função ta sendo chamada de locais diferentes nao influencia o valor do this
 
 function pessoa(){ //mesmo exemplo feito em thisEBind2 - usando arrow function
     this.idade = 0
