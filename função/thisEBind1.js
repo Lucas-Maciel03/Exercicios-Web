@@ -5,12 +5,12 @@ const pessoa = {
     }
 }
 
-pessoa.falar()
+pessoa.falar() //bom dia!
 const falar = pessoa.falar //Adicionando a funcao falar na variavel falar
-falar() //conflito entre paradigmas funcional e OO
+falar() //conflito entre paradigmas funcional e OO - saida: Undefined
 
 //O bind voce passa um objeto no qual voce quer que seja resolvido o this ou seja .bind(objeto)
 const falarPessoa = pessoa.falar.bind(pessoa)
 //a funcao da linha 9 é diferente da função da linha 13
 
-falarPessoa()
+falarPessoa() //bom dia!
